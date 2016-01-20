@@ -77,6 +77,8 @@ void handleArgument(NSString *shortName, NSString *longName, id value,
             opts->alwaysShowTodaysSection = YES;
         else if ([shortName isEqualToString:@"ea"] || [longName isEqualToString:@"excludeAllDayEvents"])
             opts->excludeAllDayEvents = YES;
+        else if ([shortName isEqualToString:@"oa"] || [longName isEqualToString:@"onlyAllDayEvents"])
+            opts->onlyAllDayEvents = YES;
     }
 
     // value-requiring arguments
