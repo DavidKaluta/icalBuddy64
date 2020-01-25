@@ -144,6 +144,7 @@ typedef struct
     BOOL alwaysShowTodaysSection;
     BOOL specificCalFilterPrecedesCalTypeFilter;
     BOOL excludeAllDayEvents;
+    BOOL onlyAllDayEvents;
 
     BOOL output_is_uncompletedTasks;
     BOOL output_is_eventsToday;
@@ -171,7 +172,7 @@ typedef struct
     NSUInteger maxNumNoteCharacters;
 } AppOptions;
 
-#define NEW_DEFAULT_APP_OPTIONS {NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,\
+#define NEW_DEFAULT_APP_OPTIONS {NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,\
                                  nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,0,0}
 
 
