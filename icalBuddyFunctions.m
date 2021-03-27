@@ -134,6 +134,9 @@ NSArray *getEvents(AppOptions *opts, NSArray *calendars)
     if (opts->excludeAllDayEvents)
         ret = [ret filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"isAllDay == NO"]];
 
+    if (opts->onlyAllDayEvents)
+        ret = [ret filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"isAllDay == YES"]];
+
     return ret;
 }
 

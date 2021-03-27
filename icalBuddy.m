@@ -230,6 +230,7 @@ int main(int argc, char *argv[])
                @"-nrd        No relative dates\n"
                @"-npn        No property names\n"
                @"-n          Include only events from now on\n"
+               @"-oa         Only output all-day events\n"
                @"-sed        Show empty dates\n"
                @"-uid        Show event/task UIDs\n"
                @"-eed        Exclude end datetimes\n"
