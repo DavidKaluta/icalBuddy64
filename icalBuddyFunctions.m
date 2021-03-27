@@ -627,7 +627,7 @@ void filterCalendars(NSMutableArray *cals, AppOptions *opts)
 
 NSArray *getCalendars(AppOptions *opts)
 {
-    NSMutableArray *calendars = [[[[CALENDAR_STORE defaultCalendarStore] calendars] mutableCopy] autorelease];
+    NSMutableArray *calendars = [[[[[[CALENDAR_STORE alloc] init] autorelease] calendars] mutableCopy] autorelease];
     filterCalendars(calendars, opts);
     return calendars;
 }
